@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Campus Works</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- jQueryMobileCSS - styling-->
+		<link rel="stylesheet" href="css/jqeury.mobile.theme.min.css" />
+				
+		<!-- jQueryMobile icons -->
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+		
+		<!-- jQueryMobile core CSS -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+        
+		<!-- Owl stylesheet -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		
+		<!-- Owl Theme -->
+		<link rel="stylesheet" href="css/owl.theme.css">
+				
+		<!-- NIGHTLY style -->
+		<link rel="stylesheet" href="css/nightly.css" />
+				
+		<!-- Load Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic|Oswald:400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Load Font Awesome Icons -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- jQueryMobile -->
+		<script src="js/jquery.mobile.min.js"></script>
+		
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+
+    </head>
+    	<body>
+        <div data-role="page" data-theme='a'>
+           <div data-role="panel" data-display="push" id="sidebar" data-theme="a" style="background-color:#d42541; border:none;">
+                <ul data-role="listview">
+                    <li data-icon='false'><a data-ajax="false" href="index.html">Home</a></li>
+                    <li data-icon='false' class="menu-item-has-children"><a data-ajax="false" href="">Services<span class="menu-mark">4</span></a>
+                        <ul data-role="listview" class="sub-menu">
+                        	<li data-icon='false'><a href="acq.html">-Acquisition</a></li>
+                          	<li data-icon='false'><a href="development.html">-Development</a></li>
+                          	<li data-icon='false'><a href="construction.html">-Construction</a></li>
+                            <li data-icon='false'><a href="markets.html">-Markets</a></li>
+                        </ul>
+                    </li>
+					<li data-icon='false'><a data-ajax="false" href="about.html">About Us</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="projects.html">Our Projects</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="contact.html">Contact</a></li>
+                </ul>
+            </div> 
+			
+			
+            <div data-role="header" data-tap-toggle="false" data-theme='a' style="background-color:#d42541; position:fixed; top:0; z-index:9000; height:50px; border:none">
+                <a href='#sidebar'data-role="none">
+                	<img src="images/menu-icon.png" alt="sidebar" id="header-menu-icon" style="top:20px" />
+				</a>
+            </div>
+            <div>
+                <img src="images/logo.png" width="100" style="position:fixed; top:20px; right:20px; z-index:1000; width:20%; max-width:100px" />
+			</div>
+            <div data-role="content">
+                <div style="position:relative;top:50px">
+					<img class="img-responsive" src="images/2014/10/birthdays5.jpg" alt="birthdays" />
+                </div>
+                <div style=" padding-top:35px">
+	                <h3 style="color: #144477;">
+    		            Reach
+            	    </h3>
+	                <p style="font-weight: bold;">
+						CampusWorks construction and development footprint has been in the Southeast. We have developed, acquired and constructed assets at several Division 1A universities in the Southeastern Conference and Atlantic Coast Conference.</p>
+                	<h3 style="color: #144477;">
+    		            Ability
+            	    </h3>
+	                <p style="font-weight: bold;">
+    		           CampusWorks has the infrastructure and ability to go well beyond the reach of the Southeast. Our development team is actively seeking new development opportunities at colleges and universities in the Big 10, Pac 12 and Big 12 Conferences.</p>
+					
+					<h3 style="color: #144477;">
+    		            Markets
+            	    </h3>
+	                <p style="font-weight: bold;">
+    		           CampusWorks projects serve the student population at the following campuses: <br>
+
+						Auburn University<br>
+						University of Texas at Austin<br>
+						University of North Carolina at Charlotte <br>
+						North Carolina State University<br>
+						Winston Salem State University<br>
+						Georgia Southern University<br>
+						Clemson University Meredith College<br>
+						Peace College<br>
+						Duke University<br>
+						North Carolina Central University<br>
+						St. Augustine College<br>
+						Shaw University<br>
+						Virginia Tech<br>
+						Liberty University<br>
+					</p>
+
+    	            <p>&nbsp;
+		                
+        	        </p>
+            	    <p style="text-align: center;">
+	                    <button type="button" onClick=window.open('http://campusworksdevelopment.com/current-markets/','_system') style="background-color:#d42541; color:#FFF">
+							Read More
+                        </button>
+	                </p>
+                </div>
+			</div>
+			<script type="text/javascript">
+        		$(document).ready(function() {
+					$("#slider").owlCarousel({   
+						slideSpeed : 700,
+						paginationSpeed : 700,
+						rewindSpeed : 1500,
+						singleItem : true,
+						pagination : true,
+						lazyLoad : true,
+						autoPlay : 7000,
+						navigation: true,
+						navigationText: [
+							"<i class='owl-nav-left fa fa-angle-left'></i>",
+							"<i class='owl-nav-right fa fa-angle-right'></i>"
+						]
+					});          
+					$("#gallery").owlCarousel({    
+						slideSpeed : 700,
+						paginationSpeed : 700,
+						rewindSpeed : 1500,
+						singleItem : true,
+						pagination : true,
+						lazyLoad : true,
+						autoPlay : 7000,
+						navigation: true,
+						navigationText: [
+							"<i class='owl-nav-left fa fa-angle-left'></i>",
+							"<i class='owl-nav-right fa fa-angle-right'></i>"
+						]
+					});    
+				});
+        	</script>
+		</div>
+    </body>
+</html>
